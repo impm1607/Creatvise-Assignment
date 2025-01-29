@@ -52,8 +52,8 @@ const HeaderSection = ({ activeTab, setActiveTab }) => {
           </AlertDialog>
         </div>
 
-        <div className="absolute bottom-[108px] sm:bottom-20 left-1/2 -translate-x-1/2 w-3/4 md:w-[90%] lg:w-[784px] bg-[#18191B] rounded-[10px] border border-[#A6A6A6] p-4 flex flex-col gap-2 md:gap-8">
-          <div className="flex flex-col-reverse md:flex-row items-start md:items-center justify-between sm:gap-2 gap-0">
+        <div className="absolute bottom-[108px]        sm:bottom-20 left-1/2 -translate-x-1/2 w-3/4       md:w-[90%]       lg:w-[784px] bg-[#18191B] rounded-[10px] border border-[#A6A6A6] p-4 flex flex-col gap-2 md:gap-8">
+          <div className="flex flex-col-reverse        md:flex-row items-start      md:items-center justify-between      sm:gap-2 gap-0">
             <p className="text-[var(--primary-color)] text-[13px]">
               Upload reference or describe your idea in a few words, you can do
               both to.
@@ -93,38 +93,42 @@ const HeaderSection = ({ activeTab, setActiveTab }) => {
           </div>
 
           <div className="flex items-center gap-2 justify-between">
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M16.8667 8.20833L9.20834 15.8667C8.27014 16.8049 6.99766 17.3319 5.67084 17.3319C4.34402 17.3319 3.07154 16.8049 2.13334 15.8667C1.19514 14.9285 0.66806 13.656 0.66806 12.3292C0.66806 11.0023 1.19514 9.72987 2.13334 8.79166L9.27501 1.65C9.90048 1.02342 10.7492 0.670979 11.6346 0.670198C12.5199 0.669416 13.3693 1.02036 13.9958 1.64583C14.6224 2.2713 14.9749 3.12006 14.9756 4.00538C14.9764 4.89071 14.6255 5.74009 14 6.36666L6.84167 13.5083C6.52894 13.8211 6.10478 13.9968 5.66251 13.9968C5.22023 13.9968 4.79608 13.8211 4.48334 13.5083C4.17061 13.1956 3.99491 12.7714 3.99491 12.3292C3.99491 11.8869 4.17061 11.4627 4.48334 11.15L11.5583 4.08333"
-                stroke="url(#paint0_linear_8_34)"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <defs>
-                <linearGradient
-                  id="paint0_linear_8_34"
-                  x1="0.66806"
-                  y1="9.00107"
-                  x2="16.8667"
-                  y2="9.00107"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#B5B5B5" />
-                  <stop offset="0.199326" stop-color="#DADADA" />
-                  <stop offset="0.43" stop-color="#E6E6E6" />
-                  <stop offset="0.59" stop-color="#F4F4F4" />
-                  <stop offset="0.73" stop-color="#FEFEFE" />
-                  <stop offset="0.963542" stop-color="#A9A9A9" />
-                  <stop offset="1" stop-color="#858585" />
-                </linearGradient>
-              </defs>
-            </svg>
+            <label >
+              <svg 
+                className="cursor-pointer"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.8667 8.20833L9.20834 15.8667C8.27014 16.8049 6.99766 17.3319 5.67084 17.3319C4.34402 17.3319 3.07154 16.8049 2.13334 15.8667C1.19514 14.9285 0.66806 13.656 0.66806 12.3292C0.66806 11.0023 1.19514 9.72987 2.13334 8.79166L9.27501 1.65C9.90048 1.02342 10.7492 0.670979 11.6346 0.670198C12.5199 0.669416 13.3693 1.02036 13.9958 1.64583C14.6224 2.2713 14.9749 3.12006 14.9756 4.00538C14.9764 4.89071 14.6255 5.74009 14 6.36666L6.84167 13.5083C6.52894 13.8211 6.10478 13.9968 5.66251 13.9968C5.22023 13.9968 4.79608 13.8211 4.48334 13.5083C4.17061 13.1956 3.99491 12.7714 3.99491 12.3292C3.99491 11.8869 4.17061 11.4627 4.48334 11.15L11.5583 4.08333"
+                  stroke="url(#paint0_linear_8_34)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_8_34"
+                    x1="0.66806"
+                    y1="9.00107"
+                    x2="16.8667"
+                    y2="9.00107"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#B5B5B5" />
+                    <stop offset="0.199326" stop-color="#DADADA" />
+                    <stop offset="0.43" stop-color="#E6E6E6" />
+                    <stop offset="0.59" stop-color="#F4F4F4" />
+                    <stop offset="0.73" stop-color="#FEFEFE" />
+                    <stop offset="0.963542" stop-color="#A9A9A9" />
+                    <stop offset="1" stop-color="#858585" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <input type="file" className="hidden" />
+            </label>
 
             <div className="flex items-center gap-2">
               <Button className="btn-rounded hidden md:inline">
